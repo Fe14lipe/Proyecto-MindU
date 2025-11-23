@@ -18,63 +18,21 @@ except Exception as e:
 # --- 3. ESTILOS CSS ---
 st.markdown("""
     <style>
-    /* Fondo general oscuro */
-    .stApp {
-        background-color: #0e1117;
-        color: white;
-    }
-    
-    /* Sidebar oscuro */
-    [data-testid="stSidebar"] {
-        background-color: #161b22;
-        border-right: 1px solid #30363d;
-    }
-
-    /* Estilo de las Tarjetas (Cards) */
-    .card-container {
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 20px;
-        padding: 20px;
-        margin-bottom: 20px;
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    }
-    
-    /* Gradientes específicos como tu imagen */
-    .gradient-purple {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-    }
-    .gradient-blue {
-        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-        color: white;
-    }
-    .gradient-green {
-        background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-        color: white;
-    }
-    
-    /* Títulos y Textos */
-    h1, h2, h3 {
-        font-family: 'Helvetica Neue', sans-serif;
-        font-weight: 700;
-    }
-    
-    /* Botones personalizados */
     .stButton>button {
         width: 100%;
-        border-radius: 15px;
-        height: 3.5em;
-        background: linear-gradient(90deg, #ff4b4b 0%, #ff9f43 100%);
+        border-radius: 20px;
+        height: 3em;
+        background-color: #ff4b4b;
         color: white;
         font-weight: bold;
         border: none;
-        transition: transform 0.2s;
     }
     .stButton>button:hover {
-        transform: scale(1.02);
-        box-shadow: 0 0 15px rgba(255, 75, 75, 0.5);
+        background-color: #ff2b2b;
+        color: white;
+    }
+    .chat-message {
+        padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; display: flex
     }
     </style>
     """, unsafe_allow_html=True)
