@@ -6,7 +6,7 @@ import google.generativeai as genai
 st.set_page_config(page_title="MindU", page_icon="🧘", layout="centered")
 
 # --- 2. CONFIGURACIÓN DE LA IA (GEMINI) ---
-API_KEY = "AIzaSyCgv2NUFdXsCUc7sXOpIoe--YoZT98UAYw"  
+API_KEY = "AIzaSyAbB_QSqa1XIR385tAJatz_a9BAFUVBBj8"  
 
 try:
     genai.configure(api_key=API_KEY)
@@ -110,3 +110,4 @@ elif menu == "Diario 📔":
     st.text_area("Desahógate aquí...")
     if st.button("Guardar"):
         st.success("Guardado. Mañana será un mejor día.")
+
